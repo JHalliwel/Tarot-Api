@@ -40,14 +40,16 @@ app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:name', (request, response)=>{
-    const tarotName = request.params.name.toLowerCase()
 
-     if(tarot[tarotName]){
-      response.json(tarot[tarotName])
-     }else {
-      response.json(tarot['Unknown'])
-     }
+app.get('/api', (request,response) =>{
+  response.json(tarot)
+})
+
+app.get('/api/:name', (request, response) =>{
+  const tarotName = request.params.name.toLowerCase()
+  if(tarot[tarotName]){
+    response.json(tarot[tarotName])
+  } else {response.json(tarot['unknown'])}
 })
 
 app.listen(process.env.PORT || PORT, ()=>{
