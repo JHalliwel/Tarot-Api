@@ -2,7 +2,7 @@
 
 Tarot api to be able to predict the future
 
-Heroku API: https://tarot-api-project.herokuapp.com/
+Heroku API: https://tarot-api-proj.herokuapp.com/
 
 TECH: Node.js, HTML
 
