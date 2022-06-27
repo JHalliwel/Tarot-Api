@@ -4,7 +4,7 @@ Tarot API
 
 
 
-Heroku API: https://tarot-api-proj.herokuapp.com/
+Heroku API: Https://tarot-api-proj.herokuapp.com/
 
 TECH: Node.js, HTML
 
