@@ -6,6 +6,8 @@ Tarot API
 
 Heroku API: Https://tarot-api-proj.herokuapp.com/
 
+Front End: jhalliwel.github.io/Tarot-Api/index.html
+
 TECH: Node.js, HTML
 
 API made from scratch to improve existing tarot api's that lack meaning of tarot cards that makes sense for the end user.
