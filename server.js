@@ -421,6 +421,11 @@ app.get('/api', (request,response) =>{
   response.json(tarot)
 })
 
+app.get('/api/random', (request, response) => {
+  const randomTarot = Object.values(tarot)[Math.floor(Math.random() * Object.values(tarot).length)]
+  return response.json(randomTarot)
+})
+
 app.get('/api/:name', (request, response) =>{
   const tarotName = request.params.name.toLowerCase()
   if(tarot[tarotName]){
